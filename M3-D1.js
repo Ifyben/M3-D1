@@ -1,15 +1,26 @@
 /* 1. Create a function to calculate the sum of the two given integers. If the two values are the same, return triple their sum. */
 
 const sum = function(a, b) {
-    if(a == b) {
+    if(a === b) {
         return (a + b) * 3;
     } else {
         return a + b;
     }
 };
+let sum2 = sum(2,2)
+console.log(sum2)
 
 /* 2. Create a function to check two given integers. Return `true` if one of them is 50 or if their sum is 50. */
 
+const isFifty = function(a , b) {
+    if(a === 50 || b === 50 || a+b === 50) {
+        return true 
+    } else {
+        return false 
+    }
+}
+let isFifty2 = isFifty(50, 4)
+console.log(isFifty2)
 
 /* 3. Create a function to remove a character at a specified position from a given string: pass the position and the string as parameters, return the new string. */
 
