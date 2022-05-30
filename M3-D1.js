@@ -38,6 +38,17 @@ console.log(findLargestInt (1,3,5));
 /* 5. Create a function to check if two numbers are in the range 40-60 or 70-100. 
     Return `true` if they do, return `false` if one (or both) don't. */
 
+    const checkRange = function(a , b) {
+        if(a >= 40 && a <=60 && b >= 40 && b <= 60) {
+         console.log("a and b are in the range 40-60");
+       } else if(a >= 70 && a <= 100 && b >= 70 && b <= 100) {
+          console.log("a and b are in the range 70-100");
+       } else {
+        console.log("a and b are not in the range");
+      }
+    };
+console.log(checkRange (50 , 55));
+console.log(checkRange (80 , 90));
 
 /* 6. Create a function to create a new string composed of a specified number of copies of a given string. 
     Pass the string and the number of copies as parameters. */
