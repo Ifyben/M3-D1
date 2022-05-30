@@ -53,6 +53,18 @@ console.log(checkRange (80 , 90));
 /* 6. Create a function to create a new string composed of a specified number of copies of a given string. 
     Pass the string and the number of copies as parameters. */
 
+    const createCopies = function(str , a) {
+        if(a <= 0) {
+            return "a should be positive";
+        } else {
+          let copies = "";
+          for(let i = 0; i < a; i++) {
+            copies += str;
+          }
+          return copies;
+        }
+    };
+    console.log(createCopies("Beauty" , 3));
 
 /* 7. Create a function to display the city name if the string begins with "Los" or "New". 
     Pass the city name as a parameter. Return `false` if they start with a different string. */
