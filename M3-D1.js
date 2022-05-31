@@ -116,6 +116,16 @@ console.log(checkRange (80 , 90));
 /* 10. Create a function to test if an array of lenght 2 DOES NOT contain 1 or 3. 
     Return `true` if it doesn't, `false` if it does. */ 
 
+    const doesNotContain = function(arr) {
+        if(arr[0] === 1 || arr[0] === 3 || arr[1] === 1 || arr[1] === 3) {
+            return false;
+        } else {
+        return true;
+    }
+    };
+
+    console.log(doesNotContain([5 , 3]))
+    console.log(doesNotContain([5, 10]))
 
 /* 11. Create a function to find the longest string from a given array of strings. 
     Pass the array as parameter and return the longest string. */ 
