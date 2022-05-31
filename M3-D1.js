@@ -117,10 +117,17 @@ console.log(checkRange (80 , 90));
     Return `true` if it doesn't, `false` if it does. */ 
 
     const doesNotContain = function(arr) {
-        if(arr[0] === 1 || arr[0] === 3 || arr[1] === 1 || arr[1] === 3) {
-            return false;
-        } else {
-        return true;
+    //    if(arr[0] === 1 || arr[0] === 3 || arr[1] === 1 || arr[1] === 3) {
+    //        return false;
+    //    } else {
+    //    return true;
+    //}
+
+    //Alternative solution
+    if(!checkArray(arr)) {
+        return true
+    } else {
+        return false 
     }
     };
 
