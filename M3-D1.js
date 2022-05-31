@@ -100,7 +100,16 @@ console.log(checkRange (80 , 90));
         } else {
             return ("Array does not contain 1 or 3");
         }
-    }; 
+
+    // Alternative Solution 
+
+    //if(arr.includes(1) || arr.includes(3)){
+    //    return("Array contains 1 or 3")
+    //} else {
+    //    return ("Array does not contain 1 or 3")
+    //}
+    };
+
     console.log(checkArray([5 , 3]))
     console.log(checkArray([5, 10]))
 
