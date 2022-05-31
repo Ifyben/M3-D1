@@ -59,16 +59,25 @@ console.log(checkRange (80 , 90));
         } else {
           let copies = "";
           for(let i = 0; i < a; i++) {
-            copies += str;
+            copies += str + " ";
           }
           return copies;
         }
     };
-    console.log(createCopies("Beauty" , 3));
+    console.log(createCopies("Beauty",  3)); 
 
 /* 7. Create a function to display the city name if the string begins with "Los" or "New". 
     Pass the city name as a parameter. Return `false` if they start with a different string. */
 
+    const startsWith = function(str) {
+        if(str.startsWith("Los") || str.startsWith("New")) {
+            return str;
+        } else {
+            return "False";
+        }
+    };
+    console.log(startsWith("Los Angeles"))
+    console.log(startsWith("Hamburg"))
 
 /* 8. Create a function to calculate and return the sum of all elements from an array with 3 elements. 
     Pass the array as a parameter. */
