@@ -137,6 +137,17 @@ console.log(checkRange (80 , 90));
 /* 11. Create a function to find the longest string from a given array of strings. 
     Pass the array as parameter and return the longest string. */ 
 
+    const getLongestString = function(arr) {
+        const temp = []; 
+        for (let i = 0; i < arr.length; i++) {
+            temp.push(arr[i].length);
+        }
+        const largest = [...temp].sort((a , b) => b - a)[0];
+        const index = temp.indexOf(largest)
+        
+        return arr[index];
+    };
+    console.log(getLongestString(["dddd", "aaa", "ppppppp"]));
 
 /* 12. Create a function to find the types of a given angle:
   1. Acute angle ⇒ between 0 and 90 degrees. Return `acute`.
