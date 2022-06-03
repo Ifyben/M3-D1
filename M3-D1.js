@@ -181,11 +181,20 @@ console.log(greatest);
 
 }
 console.log(findIndexOfGreatestInt([2, 9, 10]));
-/* 14. Create a function to find and return the largest **even** number from an array of integers that is passed a parameter. */
+/* 14. Create a function to find and return the largest **even** number from an array of integers that is passed as parameter. */
 
 
 /* 15. Create a function to check from two given integers (passed as parameters) if one is positive and the other is negative. 
     Return `true` if that's the case, return `false` if it's not. */
+
+    const checkPositiveOrNegative = function(a, b) {
+        if(a < 0 && b > 0 || a > 0 && b < 0) {
+            return true
+        } else {
+            return false 
+        }
+    }
+    console.log(checkPositiveOrNegative(2 , 3));
 
 
 /* 16. Create a function to create and return a new string where the first 3 characters and in lower case and the others are in upper case. 
