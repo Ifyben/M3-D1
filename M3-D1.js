@@ -175,7 +175,12 @@ console.log(angleType(170));
 
 /* 13. Create a function to find and return the index of the greatest element of a given array of integers that you passed as a parameter. */
 
+const findIndexOfGreatestInt = function(arr){
+const greatest = [...arr].sort((a , b) => b - a)[0];
+console.log(greatest);
 
+}
+console.log(findIndexOfGreatestInt([2, 9, 10]));
 /* 14. Create a function to find and return the largest **even** number from an array of integers that is passed a parameter. */
 
 
