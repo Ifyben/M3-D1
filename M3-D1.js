@@ -239,8 +239,16 @@ console.log(getLargestInt([2, 5, 6, 7]))
     The number has 7 as a factor ⇒ return `Stefano`
     If the number does not have 3,5, or 7, return the original number. 
     ⚠️ The factor is an integer which evenly divides a number without leaving a remainder. One number can have more than one factor, in that case you should return both names. 
-Ex. 15 has both 3 and 5 has factors: the function will return `DiegoRiccardo` */
+Ex. 15 has both 3 and 5 as factors: the function will return `DiegoRiccardo` */
 
+const numToStringByFactor = function(num) {
+    let str = "";
+    if(num % 3 === 0) str += "Diego";
+    if(num % 5 === 0) str += "Riccardo";
+    if(num % 7 === 0) str += "Stefano";
+    return str;
+} 
+console.log(numToStringByFactor(27));
 
 /* 19. Create a function that that takes a phrase as a parameter and returns its acronym.
 Ex. British Broadcasting Corporation returns `BBC` */
