@@ -158,6 +158,20 @@ console.log(checkRange (80 , 90));
     Pass the angle as a parameter.
 */
 
+const angleType = function(angle) {
+    if(angle > 0 && angle < 90) {
+        return "acute"
+    } else if(angle === 90) {
+        return "right"
+    } else if(angle > 90 && angle < 180) {
+        return "obtuse"
+    } else {
+        return "straight"
+    }
+};
+console.log(angleType(170));
+
+
 
 /* 13. Create a function to find and return the index of the greatest element of a given array of integers that you passed as a parameter. */
 
