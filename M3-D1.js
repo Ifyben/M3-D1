@@ -197,19 +197,28 @@ console.log(getLargestInt([2, 5, 6, 7]))
 /* 15. Create a function to check from two given integers (passed as parameters) if one is positive and the other is negative. 
     Return `true` if that's the case, return `false` if it's not. */
 
-    /*const checkPositiveOrNegative = function(a, b) {
+    const checkPositiveOrNegative = function(a, b) {
         if(a < 0 && b > 0 || a > 0 && b < 0) {
             return true
         } else {
             return false 
         }
     }
-    console.log(checkPositiveOrNegative(2 , 3));*/
+    console.log(checkPositiveOrNegative(2 , 3));
 
 
 /* 16. Create a function to create and return a new string where the first 3 characters and in lower case and the others are in upper case. 
     If the string's length is less than 3, convert the whole string into uppercase. Pass the original string as a parameter. */
 
+    const convertCase = function(str) {
+        if(str.length < 3) {
+            return str.toUpperCase();
+        } else {
+            return str.slice(0, 3).toLowerCase() + str.slice(3).toUpperCase();
+        }
+    };
+    console.log(convertCase("beauty"));
+    console.log(convertCase("tw"));
 
 /* 17. Create a function to calculate the sum of two integers (passed as parameters). 
     If the sum is in the 50-80 range, return `65`, otherwise, return `80`. */
